@@ -1,8 +1,15 @@
-# custom_music_engine
+# Custom Music Engine
 A custom music engine ready to be copied and used where you can add your audios in Studio, and then load them in Roblox for usage in games like Obby Creator. 
 
+# How it works
+Normally, how private audios work is Roblox wouldn't let you download the audio if you didn't have access to it. This engine solves this by first loading the audios in a game that has access, then the player joins a game like Obby Creator and can listen to the audios as it has been downloaded.
+
+The caveat is that it's a little tricky to setup, and it only lasts for how long the cache doesn't get cleared. There is a setup guide below, copied from the README.
+
+---
 # Setup Guide
 Thank you for using my custom music engine! This script details how to set it up, as well other stuff to keep in mind.
+
 ---
 # 1. Prepare the Game
 Publish the game first to access Asset Manager, and copy the following for the game title and description:
