@@ -32,11 +32,11 @@ in your description for attribution.
 ```
 Now, go to ReplicatedStorage and open the "Info" ModuleScript. Find line 3, and change the value in the quotes to your project name. It should look like this:
 ```lua
-info.projectname = "My Awesome Obby"
+data.projectname = "My Awesome Obby"
 ```
 Find line 9, and if needed change the value in the quotes to whatever game your creation belongs (ie. Obby Creator, Blockate, Tower Creator). which should look like this:
 ```lua
-info.promptGame = "Obby Creator"
+data.promptGame = "Obby Creator"
 ```
 ---
 # 2. Upload Your Audios
@@ -48,7 +48,7 @@ Now, go to ReplicatedStorage and open the "Data" ModuleScript.
 
 Find the data.playlists variable, it should look like this:
 ```lua
-info.playlists = {
+data.playlists = {
   { -- This is a playlist
     name = "Testing Playlist",
     songs = {
