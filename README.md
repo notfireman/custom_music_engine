@@ -1,10 +1,10 @@
 # Custom Music Engine
 A custom music engine ready to be copied and used where you can add your audios in Studio, and then load them in Roblox for usage in games like Obby Creator. 
 
-# How it works
-Normally, how private audios work is Roblox wouldn't let you download the audio if you didn't have access to it. This engine solves this by first loading the audios in a game that has access, then the player joins a game like Obby Creator and can listen to the audios as it has been downloaded.
+# How It Works
+Normally, Roblox wouldn't let you download audios if you didn't have access to it. This engine solves this by first loading the audios in a game that has access, then the player joins a game like Obby Creator and can listen to the audios as it has been downloaded.
 
-The caveat is that it's a little tricky to setup, and it only lasts for how long the cache doesn't get cleared. There is a setup guide below, copied from the README.
+The caveat is that it's a little tricky to setup, and it only lasts for how long the cache doesn't get cleared. There is a setup guide below to help setting it up.
 
 ---
 # Setup Guide
@@ -28,8 +28,9 @@ https://www.roblox.com/games/13940978880/Custom-Music-Engine
 ```
 "Game originally made by ImNotFireMan123
 https://www.roblox.com/games/13940978880/Custom-Music-Engine"
-in your description for attribution.
 ```
+in your description for attribution.
+
 Now, go to ReplicatedStorage and open the "Info" ModuleScript. Find line 3, and change the value in the quotes to your project name. It should look like this:
 ```lua
 data.projectname = "My Awesome Obby"
