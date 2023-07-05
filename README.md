@@ -20,8 +20,12 @@ Once you published the game, open https://create.roblox.com/dashboard, and click
 
 From the Sidebar, find "Access", scroll down until you find "Privacy" and choose Public. Click "Save Changes"
 
-!(Access page in the Game)[https://github.com/fire-luau/custom_music_engine/blob/main/Images/Access.png?raw=true "Access page in the Game"]
+<img width="762" alt="Access" src="https://github.com/fire-luau/custom_music_engine/assets/107028394/b64becf0-7c3c-4ced-859a-43c2adc508cd">
+
 
 From the Sidebar, find "Places" and click on the place with the same game name. It should say "Start Place" below it. 
 
 Continuing from that, find "Access" from the Sidebar, find "Maximum Vistor Count" and change it to a number between 1 to 8. Click "Save Changes".
+
+<img width="762" alt="Access2" src="https://github.com/fire-luau/custom_music_engine/assets/107028394/6c3dec93-bc11-46ee-be3d-659858148fbf">
+
