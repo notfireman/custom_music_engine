@@ -16,11 +16,11 @@ https://www.roblox.com/games/13940978880/
 ```
 > ⚠️ You are required to have the `Game originally made by ImNotFireMan123: https://www.roblox.com/games/13940978880/` for attribution. If you can't write `Game originally made by ImNotFireMan123`, writing `Game originally made by Fire` is acceptable.
 
-Once you published the game, open [[https://create.roblox.com/dashboard]], and click on the game you just published.
+Once you published the game, open https://create.roblox.com/dashboard, and click on the game you just published.
 
 From the Sidebar, find "Access", scroll down until you find "Privacy" and choose Public. Click "Save Changes"
 
-!(Access page in the Game)[./Images/Access.png "Access page in the Game"]
+!(Access page in the Game)[https://github.com/fire-luau/custom_music_engine/blob/main/Images/Access.png?raw=true "Access page in the Game"]
 
 From the Sidebar, find "Places" and click on the place with the same game name. It should say "Start Place" below it. 
 
