@@ -20,6 +20,8 @@ Once you published the game, open [[https://create.roblox.com/dashboard]], and c
 
 From the Sidebar, find "Access", scroll down until you find "Privacy" and choose Public. Click "Save Changes"
 
+!(Access page in the Game)[./Images/Access.png "Access page in the Game"]
+
 From the Sidebar, find "Places" and click on the place with the same game name. It should say "Start Place" below it. 
 
 Continuing from that, find "Access" from the Sidebar, find "Maximum Vistor Count" and change it to a number between 1 to 8. Click "Save Changes".
