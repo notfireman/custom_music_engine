@@ -20,12 +20,35 @@ Once you published the game, open https://create.roblox.com/dashboard, and click
 
 From the Sidebar, find "Access", scroll down until you find "Privacy" and choose Public. Click "Save Changes"
 
-<img width="762" alt="Access" src="https://github.com/fire-luau/custom_music_engine/assets/107028394/b64becf0-7c3c-4ced-859a-43c2adc508cd">
-
+<img width="762" alt="Access2" src="https://github.com/fire-luau/custom_music_engine/assets/107028394/6c3dec93-bc11-46ee-be3d-659858148fbf">
 
 From the Sidebar, find "Places" and click on the place with the same game name. It should say "Start Place" below it. 
 
 Continuing from that, find "Access" from the Sidebar, find "Maximum Vistor Count" and change it to a number between 1 to 8. Click "Save Changes".
 
-<img width="762" alt="Access2" src="https://github.com/fire-luau/custom_music_engine/assets/107028394/6c3dec93-bc11-46ee-be3d-659858148fbf">
+<img width="762" alt="Access" src="https://github.com/fire-luau/custom_music_engine/assets/107028394/b64becf0-7c3c-4ced-859a-43c2adc508cd">
 
+And that’s it for step 1. You're ready!
+## Step 2: Adding the Audios & Playlists
+This should be simple enough. 
+
+Gather all your audios as mp3 or ogg files and upload them either to your account or the game. 
+
+It's recommended to upload it directly to the game using Asset Manager. This way, the audio already has access to the game. The only caveat is that Roblox appends "Audios/" to the name, which you'll have to remove later on.
+
+⚠️ If you happen to upload it via your account, be sure to give each audio access to the game. You can do this by going to https://create.roblox.com/dashboard `> Development Items > Audios > Your audio file`, click it, find "Experiences with Access" and enter your UniverseId from there.<img width="762" alt="Screen Shot 2023-07-05 at 12 29 28 PM" src="https://github.com/fire-luau/custom_music_engine/assets/107028394/a68433b6-7599-4a76-82a8-332edc39d786">If you don't do this, the playlist won't finish loading and will throw an error.
+
+
+Now, go to ReplicatedStorage and open the "Data" ModuleScript.
+
+Find the data.playlists variable, it should look like this:
+```lua
+data.playlists = {
+  { -- This is a playlist
+    name = "Testing Playlist",
+    songs = {
+      "rbxassetid://13940982613", -- This is a song
+    }
+  },
+}
+```
