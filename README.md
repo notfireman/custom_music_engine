@@ -109,10 +109,20 @@ Repeat for how many songs you have.
 And thats it! It should work right out of the box. Publish the game and set the game to public to give it a try.
 Before you stop reading, there some other stuff you have to keep in mind.
 
-# 3. Additional stuff
+## 3. Additional stuff
 
 The "Data" ModuleScript has a theming section where you can theme the interface if required, Simply change the Color3 values for something else. 
 
 ⚠️ You also need to inform the player to join the game, load a playlist, and then rejoin Obby Creator. You can follow what I did for my tower game here: https://create.roblox.com/marketplace/asset/13953517367. Notice how I left a gap for the link, adding links in the decal *might* get you into trouble, but Obby Creator doesn't tag links in Text Effects, so I just added a Text effect with the link.
 
 # Update Guide
+This guide presumes you are updating from version 1.1 to version 2.0, you can check that in the Data ModuleScript and find the `data.engineVer` variable.
+
+Open StarterGui in your 1.1 version and delete the LocalScript and the ScreenGui called "Main". Copy the new LocalScript and Main ScreenGui from the 2.0 game to your game.
+
+Rename your old Data ModuleScript to something like DataOld. Copy the new 2.0 Data script to your game and place it in ReplicatedStorage.
+
+You can copy over most stuff from the 1.1 DataOld script to the 2.0 Data script, but some things to keep in mind:
+- In 2.0, the old `bg2` theme variable is now removed and the `bg3` variable has been renamed to `bg2`.
+- A new boast of `nav` and `navIcon` related theming variables has been added. Simply copy them over, change `navbg` to your old `bg2` variable.
+- Your playlist stays the same. Just copy them over to the new 2.0 Data script and it should work like a charm.
