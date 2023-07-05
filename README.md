@@ -81,7 +81,7 @@ To add a new playlist, copy this line of code:
 
 and append it below the previous playlist, like this:
 
-```
+```lua
 data.playlists = {
   { -- This is a playlist
     name = "Testing Playlist",
