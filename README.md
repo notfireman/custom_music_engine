@@ -100,6 +100,31 @@ data.playlists = {
 
 Change the `name` variable to something fitting
 
+> 💡 TIP: Use comments (--) to organize your playlist like this:
+```lua
+data.playlists = {
+	{
+		name = "Point 1",
+		songs = {
+			-- Pillar of Starting Steps
+			"rbxassetid://13940982613", -- UNOfficial - MGDWare Deck
+			"rbxassetid://13941869073", -- Find Everything - Dump Processing Plant
+			"rbxassetid://13941875530", -- Find Everything - Doodah Caverns
+			-- Pillar of Hexagons are the Bestagons
+			"rbxassetid://13952326802", -- Super Hexagon - Courtesy
+			"rbxassetid://13952336004", -- Super Hexagon - Focus
+			"rbxassetid://13952347311", -- Super Hexagon - Otis
+			-- Pillar of Wedgy Yet Edgy Experiences
+			"rbxassetid://13952352905", -- Ebimayo - GOODBOUNCE
+			"rbxassetid://13952372331", -- Ebimayo - GOODFORTUNE
+			-- Misc
+			"rbxassetid://13952350048", -- Stars Align - Cozy Cottage
+		}
+	},
+}
+```
+> This will help long term when you are organizing playlists
+
 To add a song, cdelete the example song and press enter.
 
 Type double quote ("), followed by rbxassetid://, and then your music id, then another double quote, and a comma.
