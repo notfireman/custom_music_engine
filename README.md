@@ -28,6 +28,15 @@ Continuing from that, find "Access" from the Sidebar, find "Maximum Vistor Count
 
 <img width="762" alt="Access" src="https://github.com/fire-luau/custom_music_engine/assets/107028394/b64becf0-7c3c-4ced-859a-43c2adc508cd">
 
+Now, go to ReplicatedStorage and open the "Data" ModuleScript. Find `data.projectname`, and change the value in the quotes to your project name. It should look like this:
+```lua
+data.projectname = "My Awesome Obby"
+```
+Find `data.promptGame` and if needed change the value in the quotes to whatever game your creation belongs (ie. Obby Creator, Blockate, Tower Creator). which should look like this:
+```lua
+data.promptGame = "Obby Creator"
+```
+
 And that’s it for step 1. You're ready!
 ## Step 2: Adding the Audios & Playlists
 This should be simple enough. 
@@ -36,12 +45,13 @@ Gather all your audios as mp3 or ogg files and upload them either to your accoun
 
 It's recommended to upload it directly to the game using Asset Manager. This way, the audio already has access to the game. The only caveat is that Roblox appends "Audios/" to the name, which you'll have to remove later on.
 
-⚠️ If you happen to upload it via your account, be sure to give each audio access to the game. You can do this by going to https://create.roblox.com/dashboard `> Development Items > Audios > Your audio file`, click it, find "Experiences with Access" and enter your UniverseId from there.<img width="762" alt="Screen Shot 2023-07-05 at 12 29 28 PM" src="https://github.com/fire-luau/custom_music_engine/assets/107028394/a68433b6-7599-4a76-82a8-332edc39d786">If you don't do this, the playlist won't finish loading and will throw an error.
-
+⚠️ If you happen to upload it via your account, be sure to give each audio access to the game. You can do this by going to https://create.roblox.com/dashboard `> Development Items > Audios > Your audio file`, click it, find "Experiences with Access" and enter your UniverseId from there.
+<img width="762" alt="Screen Shot 2023-07-05 at 12 29 28 PM" src="https://github.com/fire-luau/custom_music_engine/assets/107028394/a68433b6-7599-4a76-82a8-332edc39d786">
+⚠️ If you don't do this, the playlist won't finish loading and will throw an error.
 
 Now, go to ReplicatedStorage and open the "Data" ModuleScript.
 
-Find the data.playlists variable, it should look like this:
+Find the `data.playlists` variable, it should look like this:
 ```lua
 data.playlists = {
   { -- This is a playlist
@@ -52,3 +62,57 @@ data.playlists = {
   },
 }
 ```
+Quick explanation time:
+
+data.playlists is a list of all the playlists in the music engine. A playlist is basically a list of songs. 
+
+For example, a project like Shattered Worlds: Remastered would have a playlist for each worlds 
+
+To add a new playlist, copy this line of code:
+
+```lua
+{
+  name = "Testing Playlist",
+  songs = {
+    "rbxassetid://13940982613", -- This is a song
+  }
+},
+```
+
+and append it below the previous playlist, like this:
+
+```
+data.playlists = {
+  { -- This is a playlist
+    name = "Testing Playlist",
+    songs = {
+      "rbxassetid://13940982613", -- This is a song
+    }
+  },
+  { -- This is a playlist
+    name = "Testing Playlist",
+    songs = {
+      "rbxassetid://13940982613", -- This is a song
+    }
+  },
+}
+```
+
+Change the `name` variable to something fitting
+
+To add a song, cdelete the example song and press enter.
+
+Type double quote ("), followed by rbxassetid://, and then your music id, then another double quote, and a comma.
+
+Repeat for how many songs you have.
+
+And thats it! It should work right out of the box. Publish the game and set the game to public to give it a try.
+Before you stop reading, there some other stuff you have to keep in mind.
+
+# 3. Additional stuff
+
+The "Data" ModuleScript has a theming section where you can theme the interface if required, Simply change the Color3 values for something else. 
+
+⚠️ You also need to inform the player to join the game, load a playlist, and then rejoin Obby Creator. You can follow what I did for my tower game here: https://create.roblox.com/marketplace/asset/13953517367. Notice how I left a gap for the link, adding links in the decal *might* get you into trouble, but Obby Creator doesn't tag links in Text Effects, so I just added a Text effect with the link.
+
+# Update Guide
